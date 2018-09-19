@@ -1,3 +1,5 @@
+require 'pry'
+
 describe App do
   describe 'GET /reversename/:name' do
     it 'sends a 200 status code' do
@@ -68,7 +70,6 @@ describe App do
 
       expect(last_response.status).to eq(200)
     end
-
     it 'concatenates the words and adds a period' do
       get '/say/stop/rhyming/I/mean/it'
 
